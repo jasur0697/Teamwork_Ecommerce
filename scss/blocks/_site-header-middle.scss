@@ -1,0 +1,17 @@
+.site-header__middle {
+  @include dflex (space-between);
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: $white-cl;
+
+}
+
+.middle__logo-link {
+  min-width: 177px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 925px) {
+ 
+}

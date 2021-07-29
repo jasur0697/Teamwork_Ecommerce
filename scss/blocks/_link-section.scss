@@ -1,0 +1,40 @@
+/* LINKS SECTION */
+.links{
+  background-color: #F9F9F9;
+}
+
+.links__list {
+  width: 1139px;
+  padding: 16px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.links__link {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+}
+
+.links__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.links__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  right: -20px;
+  bottom: -1px;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background-image: url("../../img/icon-down.svg");
+  background-repeat: no-repeat;
+}
