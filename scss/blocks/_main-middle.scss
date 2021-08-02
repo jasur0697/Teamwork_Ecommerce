@@ -53,7 +53,7 @@
 
   &::after {
     content: '';
-    background-image: url(../../img/array.svg);
+    background-image: url(../img/array.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -75,8 +75,6 @@
   border-radius: 12px;
   padding: 16px;
   margin-left: 32px;
-  // flex-shrink: 0;
-
   &:first-child {
     margin-left: 0;
   }
@@ -160,6 +158,11 @@
 
   .main-middle__left-item{
     margin-right: 20px;
+    margin-bottom: 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 
   .main-middle__left{
@@ -199,13 +202,27 @@
     font-size: 12px;
     padding: 5px 8px;
   }
+
+  .main-middle__left-item{
+    margin-bottom: 30px;
+  }
+
+  .main-middle__left-item:last-child{
+    margin-bottom:0;
+  }
 }
 
 @include breakpoint-down(720px){
+  .container{
+    padding: 0px 25px;
+  }
   .main-middle__left{
     margin-bottom: 40px;
   }
  
+  .main-middle__left-list{
+    margin-bottom: 50px;
+  }
   .main-middle__left-item{
     margin-bottom: 0;
     height: 0;
@@ -216,15 +233,19 @@
   }
 
   .main-middle__right-box{
-    width: 45%;
+    width: 46%;
     &:last-child{
       margin-left: 0;
-      margin-top: 30px;
+      margin-top: 40px;
     }
   }
 }
 
 @include breakpoint-down(520px){
+  .container{
+    padding: 0px 25px;
+  }
+
  .main-middle__left-heading{
    font-size: 18px;
    font-weight: 900;
